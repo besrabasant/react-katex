@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import KaTeX from 'katex';
 
 const createMathComponent = (Component, { displayMode }) => {
@@ -50,9 +51,9 @@ const createMathComponent = (Component, { displayMode }) => {
   }
 
   MathComponent.propTypes = {
-    children: React.PropTypes.string,
-    math: React.PropTypes.string,
-    renderError: React.PropTypes.func
+    children: PropTypes.string,
+    math: PropTypes.string,
+    renderError: PropTypes.func
   };
 
   return MathComponent;
